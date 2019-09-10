@@ -1,4 +1,4 @@
 # first-bootstrap-vue
-my first-bootstrap-vue app
+my first HTML & JavaScript app
 
 https://ryuteki.github.io/first-bootstrap-vue/
