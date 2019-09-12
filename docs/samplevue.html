@@ -29,6 +29,12 @@
     <p>
         {{ message }} <button v-on:click="reverseMessage">アイテム2</button>
     </p>
+  <p>
+    <input v-model = "num1">
+    <input v-model = "num2">
+    {{num1}} + {{num2}} = {{ result }}
+    <button v-on:click="sum"> SUM </sum>
+    </p>
   </div>
 
 <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
@@ -37,11 +43,17 @@
   var app = new Vue({
     el: '#app',
     data: {
-      message: 'Hello Vue!'
+      message: 'Hello Vue!',
+      num1: 1,
+      num2: 2,
+      result: 0
     },
     methods: {
       reverseMessage: function () {
         this.message = this.message.split('').reverse().join('')
+      },
+      sum: function() {
+        this.result = this.num1 + this.num2;
       }
     }
   })
